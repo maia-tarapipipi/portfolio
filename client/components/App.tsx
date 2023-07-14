@@ -7,7 +7,7 @@ function App() {
     <>
       <div>
         <h1>Maia Tarapipipi</h1>
-        <ul></ul>
+        <h2>Full-Stack Software Developer | Textile Designer</h2>
       </div>
     </>
   )
