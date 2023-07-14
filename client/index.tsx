@@ -9,9 +9,10 @@ import {
 import App from './components/App'
 
 export const routes = createRoutesFromElements(
-  // TO DO: Error Component
-  <Route path="/" element={<App />} errorElement={<ErrorPage />}>
-    {/* ready components for other tickets */}
+  // TO DO: Error Component errorElement={<ErrorPage />}
+  <Route path="/" element={<App />}>
+    {/* TO DO: ready components for other tickets */}
+    {/* TO DO: add fall back */}
     {/* <Route index element={<Home />} /> */}
     {/* <Route index element={<NoHeaKoe  />} /> */}
     {/* <Route index element={<kainga  />} /> */}
