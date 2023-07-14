@@ -1,13 +1,35 @@
 import { createRoot } from 'react-dom/client'
-import { Provider } from 'react-redux'
-import store from './store'
-
+import { QueryClient, QueryClientProvider } from 'react-query'
+import {
+  Route,
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+} from 'react-router-dom'
 import App from './components/App'
 
+export const routes = createRoutesFromElements(
+  // TO DO: Error Component errorElement={<ErrorPage />}
+  <Route path="/" element={<App />}>
+    {/* TO DO: ready components for other tickets */}
+    {/* TO DO: add fall back */}
+    {/* <Route index element={<Home />} /> */}
+    {/* <Route index element={<NoHeaKoe  />} /> */}
+    {/* <Route index element={<kainga  />} /> */}
+    {/* <Route index element={<pinkypromise  />} /> */}
+    {/* <Route index element={<contact  />} /> */}
+  </Route>,
+)
+
+function AppProvider() {
+  return <RouterProvider router={createBrowserRouter(routes)} />
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  const queryClient = new QueryClient()
   createRoot(document.getElementById('app') as HTMLElement).render(
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <QueryClientProvider client={queryClient}>
+      <AppProvider />
+    </QueryClientProvider>,
   )
 })
