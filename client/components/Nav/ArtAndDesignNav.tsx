@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 
 function ArtAndDesignNav() {
+  // add event listener so when clicked display 
   return (
     <div>
-      <p>Art and Design</p>
+
       <Link to="/NoHeaKoe">Nō hea koe?</Link>
       <Link to="/Kainga">Kāinga</Link>
     </div>

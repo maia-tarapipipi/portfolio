@@ -3,11 +3,19 @@ import SoftwareDevelopmentNav from './SoftwareDevelopmentNav'
 import ArtAndDesignNav from './ArtAndDesignNav'
 
 function ProjectsNav() {
+  // only display sub menu when clicked
+
   return (
     <div>
       <nav>
-        <SoftwareDevelopmentNav />
-        <ArtAndDesignNav />
+        <div>
+          Software Development
+          <SoftwareDevelopmentNav />
+        </div>
+        <div>
+          Art and Design
+          <ArtAndDesignNav />
+        </div>
       </nav>
     </div>
   )
