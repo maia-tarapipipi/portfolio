@@ -1,15 +1,14 @@
 import { useEffect } from 'react'
 import Header from './Header'
+import Nav from './Nav/Nav'
 
 function App() {
-  useEffect(() => {}, [])
-
   return (
     <>
       <div>
         {/* TO DO: add components to render here */}
-        <Header /> 
-        {/* <Nav />  */}
+        <Header />
+        <Nav />
         {/* <Outlet />  */}
         {/* <Footer />  */}
       </div>
