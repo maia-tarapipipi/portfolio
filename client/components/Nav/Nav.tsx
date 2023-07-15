@@ -4,10 +4,7 @@ import { IoClose, IoMenu } from 'react-icons/io5'
 import ProjectsNav from './ProjectsNav'
 
 function Nav() {
-  // project has 2 drop down menus
-  // menu is responsive to screen width - uses hamburger menu
   // event listener to tell when its been clicked
-  // import in react icons for hamburger and cross
 
   const [open, setOpen] = useState(false)
 

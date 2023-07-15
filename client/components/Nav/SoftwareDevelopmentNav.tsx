@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 
 function SoftwareDevelopmentNav() {
-  // add event listener so when clicked display menu
   return (
     <div>
 
