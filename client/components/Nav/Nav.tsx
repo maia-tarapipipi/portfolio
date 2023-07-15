@@ -6,13 +6,12 @@ import ArtAndDesignNav from './ArtAndDesignNav'
 
 function Nav() {
   const [open, setOpen] = useState(false)
+  const [openSoftware, setOpenSoftware] = useState(false)
+  const [openNav, setOpenNav] = useState(false)
 
   const toggleMenu = () => {
     setOpen((prev) => !prev)
   }
-
-  const [openSoftware, setOpenSoftware] = useState(false)
-  const [openNav, setOpenNav] = useState(false)
   const toggleSubMenu = () => {
     setOpenSoftware((prev) => !prev)
   }
@@ -30,18 +29,20 @@ function Nav() {
           open
             ? 'block'
             : 'hidden ' +
-              'w-100 lg:flex justify-evenly lg:items-center lg:w-auto'
+              'w-100 lg:flex justify-evenly lg:items-start lg:w-auto lg:flex-row'
         }
       >
         <Link to="/">home</Link>
-        <button onClick={toggleSubMenu}>
-          software development
+
+        <button onClick={toggleSubMenu}>software development</button>
+        <div className="fixed top-28 z-10">
           {openSoftware && <SoftwareDevelopmentNav />}
-        </button>
-        <button onClick={toggleMenuNav}>
-          art and design
+        </div>
+
+        <button onClick={toggleMenuNav}>art and design</button>
+        <div className="fixed top-28 z-10">
           {openNav && <ArtAndDesignNav />}
-        </button>
+        </div>
         <Link to="/contact">contact</Link>
       </nav>
     </div>
