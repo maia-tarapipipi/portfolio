@@ -1,7 +1,9 @@
 module.exports = {
   content: ['./client/**/*.{html,jsx,tsx}', './index.html'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: { ubuntu: ['Ubuntu', 'sans-serif'] },
+    },
   },
   plugins: [],
 }

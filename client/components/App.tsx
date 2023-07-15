@@ -1,12 +1,11 @@
-import { useEffect } from 'react'
 import Header from './Header'
 import Nav from './Nav/Nav'
 
 function App() {
   return (
     <>
-      <div>
-        {/* TO DO: add components to render here */}
+      {/* TO DO: add components to render here */}
+      <div className="font-ubuntu">
         <Header />
         <Nav />
         {/* <Outlet />  */}

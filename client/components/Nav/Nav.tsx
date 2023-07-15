@@ -14,6 +14,9 @@ function Nav() {
 
   return (
     <div>
+      <button className="lg:hidden" onClick={toggleMenu}>
+        {open ? <IoClose /> : <IoMenu />}
+      </button>
       <nav
         className={
           open
@@ -26,9 +29,6 @@ function Nav() {
         <ProjectsNav />
         <Link to="/contact">contact</Link>
       </nav>
-      <button className="lg:hidden" onClick={toggleMenu}>
-        {open ? <IoClose /> : <IoMenu />}
-      </button>
     </div>
   )
 }
