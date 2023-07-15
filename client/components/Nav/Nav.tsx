@@ -1,19 +1,27 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { IoClose, IoMenu } from 'react-icons/io5'
-import ProjectsNav from './ProjectsNav'
+import SoftwareDevelopmentNav from './SoftwareDevelopmentNav'
+import ArtAndDesignNav from './ArtAndDesignNav'
 
 function Nav() {
-  // event listener to tell when its been clicked
-
   const [open, setOpen] = useState(false)
 
   const toggleMenu = () => {
     setOpen((prev) => !prev)
   }
 
+  const [openSoftware, setOpenSoftware] = useState(false)
+  const [openNav, setOpenNav] = useState(false)
+  const toggleSubMenu = () => {
+    setOpenSoftware((prev) => !prev)
+  }
+  const toggleMenuNav = () => {
+    setOpenNav((prev) => !prev)
+  }
+
   return (
-    <div>
+    <div className="text-4xl">
       <button className="lg:hidden" onClick={toggleMenu}>
         {open ? <IoClose /> : <IoMenu />}
       </button>
@@ -22,11 +30,18 @@ function Nav() {
           open
             ? 'block'
             : 'hidden ' +
-              'w-70 lg:flex justify-between items-center lg:items-center lg:w-auto'
+              'w-100 lg:flex justify-evenly lg:items-center lg:w-auto'
         }
       >
         <Link to="/">home</Link>
-        <ProjectsNav />
+        <button onClick={toggleSubMenu}>
+          software development
+          {openSoftware && <SoftwareDevelopmentNav />}
+        </button>
+        <button onClick={toggleMenuNav}>
+          art and design
+          {openNav && <ArtAndDesignNav />}
+        </button>
         <Link to="/contact">contact</Link>
       </nav>
     </div>
