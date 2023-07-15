@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { IoClose, IoMenu } from 'react-icons/io5'
 import ProjectsNav from './ProjectsNav'
 
