@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 function ArtAndDesignNav() {
   return (
-    <div className="w-full bg-yellow-300">
+    <div>
       <Link className="mx-10 " to="/NoHeaKoe">
         Nō hea koe?
       </Link>
