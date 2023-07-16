@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 function SoftwareDevelopmentNav() {
   return (
-    <div>
+    <div className='bg-white'>
       <Link className="mx-10 " to="/PinkyPromise">
         pinky promise
       </Link>

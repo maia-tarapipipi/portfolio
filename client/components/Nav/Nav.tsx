@@ -29,12 +29,12 @@ function Nav() {
           <Link to="/">home</Link>
         </div>
         <button onClick={toggleSubMenu}>software development</button>
-        <div className="lg:fixed top-28 z-10">
+        <div className="lg:fixed top-48 z-10">
           {openSoftware && <SoftwareDevelopmentNav />}
         </div>
 
         <button onClick={toggleMenuNav}>art and design</button>
-        <div className="lg:fixed top-28 z-10">
+        <div className="lg:fixed top-48 z-10">
           {openNav && <ArtAndDesignNav />}
         </div>
         <Link to="/contact">contact</Link>
