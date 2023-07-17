@@ -1,6 +1,9 @@
 function Contact() {
-  return
-  ;<div></div>
+  return (
+    <div>
+      <p>maia</p>
+    </div>
+  )
 }
 
 export default Contact
