@@ -35,7 +35,7 @@ function Nav() {
           className={
             open && width < breakpoint
               ? 'block ml-10'
-              : 'hidden w-screen lg:flex justify-evenly bg-white my-5'
+              : 'hidden w-screen lg:flex justify-evenly bg-white my-10'
           }
         >
           <li className="flex-col">
@@ -47,15 +47,15 @@ function Nav() {
             <button onClick={toggleSubMenu} className="hover:text-slate-500">
               software development
             </button>
-            <li className="absolute top-12 z-10 w-screen">
+            <li className="absolute top-12 left-1/2 z-10 w-screen">
               {openSoftware && <SoftwareDevelopmentNav />}
             </li>
           </div>
-          <div className="relative">
+          <div className="relative ">
             <button onClick={toggleMenuNav} className="hover:text-slate-500">
               art and design
             </button>
-            <li className="absolute top-12 z-10 w-screen">
+            <li className="absolute top-12 -left-72 z-10 w-screen">
               {openNav && <ArtAndDesignNav />}
             </li>
           </div>
