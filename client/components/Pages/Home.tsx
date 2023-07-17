@@ -49,37 +49,40 @@ function Home() {
     adaptiveHeight: true,
   }
 
+  // add buttons to ON TOP of sliders
+  // sliders change colour on hover - bg becomes transparent
+  //
+
   return (
     <div>
-      <button>
-        
-      </button>
       <div>
-        <Slider {...settings} className="my-12">
-          {NoHeaKoeGallery.map((path, index) => (
-            <div key={index}>
-              <img
-                src={`/NoHeaKoeGallery/${path}`}
-                alt={`${path}`}
-                className="h-96"
-              />
-            </div>
-          ))}
-        </Slider>
-      </div>
+        <div>
+          <Slider {...settings} className="my-12">
+            {NoHeaKoeGallery.map((path, index) => (
+              <div key={index}>
+                <img
+                  src={`/NoHeaKoeGallery/${path}`}
+                  alt={`${path}`}
+                  className="h-96"
+                />
+              </div>
+            ))}
+          </Slider>
+        </div>
 
-      <div>
-        <Slider {...settings} className="my-12">
-          {KaingaGallery.map((path, index) => (
-            <div key={index}>
-              <img
-                src={`/KaingaGallery/${path}`}
-                alt={`${path}`}
-                className="h-96"
-              />
-            </div>
-          ))}
-        </Slider>
+        <div>
+          <Slider {...settings} className="my-12">
+            {KaingaGallery.map((path, index) => (
+              <div key={index}>
+                <img
+                  src={`/KaingaGallery/${path}`}
+                  alt={`${path}`}
+                  className="h-96"
+                />
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
 
       <div className="flex flex-row max-md:flex-col  justify-evenly items-center">
