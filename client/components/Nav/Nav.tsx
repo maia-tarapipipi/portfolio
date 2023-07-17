@@ -26,16 +26,16 @@ function Nav() {
   }, [])
 
   return (
-    <div className="text-2xl">
+    <div className="relative text-2xl">
       <button className="lg:hidden ml-10" onClick={toggleMenu}>
         {open ? <IoClose /> : <IoMenu />}
       </button>
-      <ul>
+      <ul className="absolute z-20 bg-white w-screen">
         <div
           className={
             open && width < breakpoint
               ? 'block ml-10'
-              : 'hidden w-full lg:flex justify-evenly bg-white'
+              : 'hidden w-screen lg:flex justify-evenly bg-white my-5'
           }
         >
           <li className="flex-col">
