@@ -31,4 +31,3 @@ function Footer() {
 }
 
 export default Footer
-// /Users/maiatarapipipi/workspace/portfolio/public/maia-tarapipipi-CV-2023.pdf
