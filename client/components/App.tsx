@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom'
 import Footer from './Footer'
 import Header from './Header'
 import Nav from './Nav/Nav'
@@ -9,7 +10,7 @@ function App() {
       <div className="font-ubuntu">
         <Header />
         <Nav />
-        {/* <Outlet />  */}
+        <Outlet /> 
         <Footer />
       </div>
     </>
