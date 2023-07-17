@@ -1,8 +1,44 @@
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+
 function Home() {
+  const gallery = [
+    'anzac-bay-1.jpeg',
+    'anzac-bay-2.jpeg',
+    'kainga-1.jpeg',
+    'kainga-2.jpeg',
+    'kainga-3.jpeg',
+    'kainga-4.jpg',
+    'poleroid-1.jpeg',
+  ]
+
+  const settings = {
+    dots: true,
+    centerMode: true,
+    centerPadding: '0',
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true,
+    adaptiveHeight: true,
+  }
+
   return (
     <div>
-      {/* research how to make a scrolling gallery OR adding a movie */}
-      <div></div>
+      <div>
+        <Slider {...settings} className="my-10">
+          {gallery.map((path, index) => (
+            <div key={index}>
+              <img
+                src={`/NoGallery/${path}`}
+                alt={`${path}`}
+                className="h-96"
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
 
       <div className="flex flex-row max-md:flex-col  justify-evenly items-center">
         <div className="w-1/4">
