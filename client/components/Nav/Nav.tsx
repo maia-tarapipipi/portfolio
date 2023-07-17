@@ -26,7 +26,7 @@ function Nav() {
   }, [])
 
   return (
-    <div className="relative text-2xl">
+    <div className="relative text-2xl mb-20">
       <button className="lg:hidden ml-10" onClick={toggleMenu}>
         {open ? <IoClose /> : <IoMenu />}
       </button>
@@ -55,7 +55,7 @@ function Nav() {
             <button onClick={toggleMenuNav} className="hover:text-slate-500">
               art and design
             </button>
-            <li className="absolute top-12 -left-72 z-10 w-screen">
+            <li className="absolute top-12 -left-72 z-10 max-w-fit">
               {openNav && <ArtAndDesignNav />}
             </li>
           </div>
