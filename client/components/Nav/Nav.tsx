@@ -39,18 +39,29 @@ function Nav() {
           }
         >
           <li className="flex-col">
-            <Link to="/">home</Link>
+            <Link to="/" className="hover:text-slate-500">
+              home
+            </Link>
           </li>
-          <button onClick={toggleSubMenu}>software development</button>
-          <li className="lg:fixed top-48 z-10">
-            {openSoftware && <SoftwareDevelopmentNav />}
-          </li>
-
-          <button onClick={toggleMenuNav}>art and design</button>
-          <li className="lg:fixed top-48 z-10">
-            {openNav && <ArtAndDesignNav />}
-          </li>
-          <Link to="/contact">contact</Link>
+          <div className="relative">
+            <button onClick={toggleSubMenu} className="hover:text-slate-500">
+              software development
+            </button>
+            <li className="absolute top-12 z-10 w-screen">
+              {openSoftware && <SoftwareDevelopmentNav />}
+            </li>
+          </div>
+          <div className="relative">
+            <button onClick={toggleMenuNav} className="hover:text-slate-500">
+              art and design
+            </button>
+            <li className="absolute top-12 z-10 w-screen">
+              {openNav && <ArtAndDesignNav />}
+            </li>
+          </div>
+          <Link to="/contact" className="hover:text-slate-500">
+            contact
+          </Link>
         </div>
       </ul>
     </div>

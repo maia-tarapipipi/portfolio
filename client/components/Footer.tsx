@@ -12,15 +12,15 @@ function Footer() {
           to="https://www.linkedin.com/in/maia-tarapipipi-a08ab4282/"
           target="_blank"
         >
-          <IoLogoLinkedin size={40} className="mx-5" />
+          <IoLogoLinkedin size={40} className="mx-5 hover:fill-slate-500" />
         </Link>
 
         <EmailShareButton url={'tarapipipim'}>
-          <FaPaperPlane size={40} className="mx-5" />
+          <FaPaperPlane size={40} className="mx-5 hover:fill-slate-500" />
         </EmailShareButton>
 
         <Link to="https://github.com/maia-tarapipipi" target="_blank">
-          <BsGithub size={40} className="mx-5" />
+          <BsGithub size={40} className="mx-5 hover:fill-slate-500" />
         </Link>
       </div>
       <div className="w-70 flex items-center justify-evenly">
