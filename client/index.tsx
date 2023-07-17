@@ -13,11 +13,11 @@ export const routes = createRoutesFromElements(
   <Route path="/" element={<App />}>
     {/* TO DO: ready components for other tickets */}
     {/* TO DO: add fall back */}
-    {/* <Route index element={<Home />} /> */}
-    {/* <Route index element={<NoHeaKoe  />} /> */}
-    {/* <Route index element={<kainga  />} /> */}
-    {/* <Route index element={<pinkypromise  />} /> */}
-    {/* <Route index element={<contact  />} /> */}
+    {/* <Route index  path="/" element={<Home />}/> */}
+    {/* <Route index  path="/NoHeaKoe" element={<NoHeaKoe />} /> */}
+    {/* <Route index path="/kainga" element={<kainga  />} /> */}
+    {/* <Route index path="/PinkyPromise" element={<pinkypromise  />} /> */}
+    {/* <Route index path="/contact" element={<contact  />} /> */}
   </Route>,
 )
 
