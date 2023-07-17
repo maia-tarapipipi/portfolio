@@ -68,7 +68,7 @@ function Home() {
         <div className="w-1/4">
           <img src="/maia-photo.svg" alt="Maia-selfie" />
         </div>
-        <div className="w-1/4 text-center">
+        <div className="w-1/2 text-center mx-4">
           <p className="mt-3">
             Ngāti Hauā, Te Arawa, Te Rarawa, Waikato Tainui
           </p>
