@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { IoClose, IoMenu } from 'react-icons/io5'
 import SoftwareDevelopmentNav from './SoftwareDevelopmentNav'
@@ -8,6 +8,8 @@ function Nav() {
   const [open, setOpen] = useState(false)
   const [openSoftware, setOpenSoftware] = useState(false)
   const [openNav, setOpenNav] = useState(false)
+  const [width, setWidth] = useState(window.innerWidth)
+  const breakpoint = 1024
 
   const toggleMenu = () => {
     setOpen((prev) => !prev)
@@ -19,12 +21,23 @@ function Nav() {
     setOpenNav((prev) => !prev)
   }
 
+  useEffect(() => {
+    window.addEventListener('resize', () => setWidth(window.innerWidth))
+  }, [])
+
   return (
     <div className="text-2xl">
       <button className="lg:hidden" onClick={toggleMenu}>
         {open ? <IoClose /> : <IoMenu />}
       </button>
-      <div className={open ? 'block' : 'hidden w-full lg:flex justify-evenly'}>
+
+      <div
+        className={
+          open && width < breakpoint
+            ? 'block'
+            : 'hidden w-full lg:flex justify-evenly'
+        }
+      >
         <div className="flex-col">
           <Link to="/">home</Link>
         </div>
