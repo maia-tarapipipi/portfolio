@@ -3,7 +3,17 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 function Home() {
-  const gallery = [
+  const NoGallery = [
+    'anzac-bay-1.jpeg',
+    'anzac-bay-2.jpeg',
+    'kainga-1.jpeg',
+    'kainga-2.jpeg',
+    'kainga-3.jpeg',
+    'kainga-4.jpg',
+    'poleroid-1.jpeg',
+  ]
+
+  const KaiGallery = [
     'anzac-bay-1.jpeg',
     'anzac-bay-2.jpeg',
     'kainga-1.jpeg',
@@ -27,8 +37,22 @@ function Home() {
   return (
     <div>
       <div>
-        <Slider {...settings} className="my-10">
-          {gallery.map((path, index) => (
+        <Slider {...settings} className="my-12">
+          {NoGallery.map((path, index) => (
+            <div key={index}>
+              <img
+                src={`/NoGallery/${path}`}
+                alt={`${path}`}
+                className="h-96"
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
+
+      <div>
+        <Slider {...settings} className="my-12">
+          {KaiGallery.map((path, index) => (
             <div key={index}>
               <img
                 src={`/NoGallery/${path}`}
