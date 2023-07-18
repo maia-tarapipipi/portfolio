@@ -1,3 +1,7 @@
+#### **Description**
+Personal portfolio project. 
+Please be aware, this project is a work in progress, some features have not been implimented and are still in development. 
+
 #### **Technologies**
 
 - express
