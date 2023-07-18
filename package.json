@@ -15,7 +15,7 @@
     "dev:css": "tailwindcss -i ./client/styles/input.css -o ./public/output.css --watch",
     "build": "run-s build:client build:server",
     "build:client": "vite build",
-    "build:server": "tsc -p server/tsconfig.json",
+    "build:server": "tsc -p tsconfig.json",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ."
   },
   "eslintConfig": {
