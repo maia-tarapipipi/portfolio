@@ -9,7 +9,7 @@ function Nav() {
   const [openSoftware, setOpenSoftware] = useState(false)
   const [openNav, setOpenNav] = useState(false)
   const [width, setWidth] = useState(window.innerWidth)
-  const [scrollPosition, setScrollPosition] = useState(0)
+
   const breakpoint = 1024
 
   const toggleMenu = () => {
@@ -24,7 +24,6 @@ function Nav() {
 
   useEffect(() => {
     window.addEventListener('resize', () => setWidth(window.innerWidth))
-    window.addEventListener('scroll', () => setScrollPosition(window.scrollY))
   }, [])
 
   return (
