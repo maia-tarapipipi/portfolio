@@ -9,6 +9,7 @@ function Nav() {
   const [openSoftware, setOpenSoftware] = useState(false)
   const [openNav, setOpenNav] = useState(false)
   const [width, setWidth] = useState(window.innerWidth)
+  const [scrollPosition, setScrollPosition] = useState(0)
   const breakpoint = 1024
 
   const toggleMenu = () => {
@@ -23,10 +24,11 @@ function Nav() {
 
   useEffect(() => {
     window.addEventListener('resize', () => setWidth(window.innerWidth))
+    window.addEventListener('scroll', () => setScrollPosition(window.scrollY))
   }, [])
 
   return (
-    <div className="relative text-2xl mb-20">
+    <div className="relative text-2xl">
       <button className="lg:hidden ml-10" onClick={toggleMenu}>
         {open ? <IoClose /> : <IoMenu />}
       </button>
@@ -35,7 +37,7 @@ function Nav() {
           className={
             open && width < breakpoint
               ? 'block ml-10'
-              : 'hidden w-screen lg:flex justify-evenly bg-white my-10'
+              : 'hidden w-screen lg:flex justify-evenly'
           }
         >
           <li className="flex-col">
@@ -43,19 +45,19 @@ function Nav() {
               home
             </Link>
           </li>
-          <div className="relative">
+          <div>
             <button onClick={toggleSubMenu} className="hover:text-slate-500">
               software development
             </button>
-            <li className="absolute top-12 left-1/2 z-10 w-screen">
+            <li className="md:max-lg:fixed lg:absolute  lg:top-10 lg:left-1/2 lg:transform lg:-translate-x-1/2 z-10 bg-white">
               {openSoftware && <SoftwareDevelopmentNav />}
             </li>
           </div>
-          <div className="relative ">
+          <div>
             <button onClick={toggleMenuNav} className="hover:text-slate-500">
               art and design
             </button>
-            <li className="absolute top-12 -left-72 z-10 max-w-fit">
+            <li className="md:max-lg:fixed  lg:absolute  lg:top-10 lg:left-1/2 lg:transform lg:-translate-x-1/2 z-10 bg-white">
               {openNav && <ArtAndDesignNav />}
             </li>
           </div>
