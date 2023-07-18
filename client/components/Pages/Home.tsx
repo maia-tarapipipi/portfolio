@@ -61,19 +61,17 @@ function Home() {
     <div>
       <div>
         <div className="relative my-12">
-          <div className="z-50 bg-black">
-            <Slider {...settings} className="z-10">
-              {NoHeaKoeGallery.map((path, index) => (
-                <div key={index}>
-                  <img
-                    src={`/NoHeaKoeGallery/${path}`}
-                    alt={`${path}`}
-                    className="h-96 "
-                  />
-                </div>
-              ))}
-            </Slider>
-          </div>
+          <Slider {...settings} className="z-10 hover:opacity-80">
+            {NoHeaKoeGallery.map((path, index) => (
+              <div key={index}>
+                <img
+                  src={`/NoHeaKoeGallery/${path}`}
+                  alt={`${path}`}
+                  className="h-96 "
+                />
+              </div>
+            ))}
+          </Slider>
           <Link
             to="/NoHeaKoe"
             className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 border-2 border-solid bg-white border-slate-500 p-2 text-slate-500 hover:border-2 hover:border-solid hover:text-white hover:bg-slate-500 hover:border-slate-700 "
@@ -83,7 +81,7 @@ function Home() {
         </div>
 
         <div className="relative">
-          <Slider {...settings} className="my-12">
+          <Slider {...settings} className="my-12  hover:opacity-80">
             {KaingaGallery.map((path, index) => (
               <div key={index}>
                 <img
