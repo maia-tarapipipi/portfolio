@@ -1,18 +1,18 @@
-#### **From the command line**
+#### **Technologies**
 
-```
-npm install # to install dependencies
-npm run dev # to start the dev server
-```
+- express
+- knex
+- react-icons
+- react-pdf
+- react-scroll
+- react-share
+- react-slick
 
 ---
 
 #### **Figma Diagram**
 
+Diagram - Still Updating through-out but basic format from here
 https://www.figma.com/file/iskxOGw3ShtaVyI8dIQZ68/Maia-Tarapipipi---Portfolio?type=design&node-id=4-18&mode=design&t=ScysXu5Dnk1LPTw2-0
-```
-Draft wireframe for future features
-
-```
 
 ---
