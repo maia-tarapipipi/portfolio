@@ -49,7 +49,7 @@ function Nav() {
             <button onClick={toggleSubMenu} className="hover:text-slate-500">
               software development
             </button>
-            <li className="md:max-lg:fixed lg:absolute  lg:top-10 lg:left-1/2 lg:transform lg:-translate-x-1/2 z-10 bg-white">
+            <li className="max-lg:fixed lg:absolute  lg:top-10 lg:left-1/2 lg:transform lg:-translate-x-1/2 z-10 bg-white">
               {openSoftware && <SoftwareDevelopmentNav />}
             </li>
           </div>
@@ -57,7 +57,7 @@ function Nav() {
             <button onClick={toggleMenuNav} className="hover:text-slate-500">
               art and design
             </button>
-            <li className="md:max-lg:fixed  lg:absolute  lg:top-10 lg:left-1/2 lg:transform lg:-translate-x-1/2 z-10 bg-white">
+            <li className="max-lg:fixed  lg:absolute  lg:top-10 lg:left-1/2 lg:transform lg:-translate-x-1/2 z-10 bg-white">
               {openNav && <ArtAndDesignNav />}
             </li>
           </div>
