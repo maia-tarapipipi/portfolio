@@ -8,8 +8,9 @@ function Header() {
           Full-Stack Software Developer | Textile Artist
         </div>
       </div>
-
-      <Nav />
+      <div className="mb-24">
+        <Nav />
+      </div>
     </div>
   )
 }
