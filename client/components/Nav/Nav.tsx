@@ -9,6 +9,7 @@ function Nav() {
   const [openSoftware, setOpenSoftware] = useState(false)
   const [openNav, setOpenNav] = useState(false)
   const [width, setWidth] = useState(window.innerWidth)
+
   const breakpoint = 1024
 
   const toggleMenu = () => {
@@ -26,32 +27,44 @@ function Nav() {
   }, [])
 
   return (
-    <div className="text-2xl">
-      <button className="lg:hidden" onClick={toggleMenu}>
+    <div className="relative text-2xl">
+      <button className="lg:hidden ml-10" onClick={toggleMenu}>
         {open ? <IoClose /> : <IoMenu />}
       </button>
-
-      <div
-        className={
-          open && width < breakpoint
-            ? 'block'
-            : 'hidden w-full lg:flex justify-evenly'
-        }
-      >
-        <div className="flex-col">
-          <Link to="/">home</Link>
+      <ul className="absolute z-20 bg-white w-screen">
+        <div
+          className={
+            open && width < breakpoint
+              ? 'block ml-10'
+              : 'hidden w-screen lg:flex justify-evenly'
+          }
+        >
+          <li className="flex-col">
+            <Link to="/" className="hover:text-slate-500">
+              home
+            </Link>
+          </li>
+          <div>
+            <button onClick={toggleSubMenu} className="hover:text-slate-500">
+              software development
+            </button>
+            <li className="max-lg:fixed lg:absolute  lg:top-10 lg:left-1/2 lg:transform lg:-translate-x-1/2 z-10 bg-white">
+              {openSoftware && <SoftwareDevelopmentNav />}
+            </li>
+          </div>
+          <div>
+            <button onClick={toggleMenuNav} className="hover:text-slate-500">
+              art and design
+            </button>
+            <li className="max-lg:fixed  lg:absolute  lg:top-10 lg:left-1/2 lg:transform lg:-translate-x-1/2 z-10 bg-white">
+              {openNav && <ArtAndDesignNav />}
+            </li>
+          </div>
+          <Link to="/contact" className="hover:text-slate-500">
+            contact
+          </Link>
         </div>
-        <button onClick={toggleSubMenu}>software development</button>
-        <div className="lg:fixed top-48 z-10">
-          {openSoftware && <SoftwareDevelopmentNav />}
-        </div>
-
-        <button onClick={toggleMenuNav}>art and design</button>
-        <div className="lg:fixed top-48 z-10">
-          {openNav && <ArtAndDesignNav />}
-        </div>
-        <Link to="/contact">contact</Link>
-      </div>
+      </ul>
     </div>
   )
 }
