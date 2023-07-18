@@ -24,7 +24,9 @@ function Footer() {
         </Link>
       </div>
       <div className="w-70 flex items-center justify-evenly">
-        <Link to="/">return to top</Link>
+
+          return to top
+
       </div>
     </div>
   )
