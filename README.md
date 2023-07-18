@@ -27,3 +27,4 @@ https://www.figma.com/file/iskxOGw3ShtaVyI8dIQZ68/Maia-Tarapipipi---Portfolio?ty
 
 On-going project board
 https://github.com/users/maia-tarapipipi/projects/1/views/1?layout=board 
+

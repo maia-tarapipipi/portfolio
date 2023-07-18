@@ -1,5 +1,9 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./client/**/*.{html,jsx,tsx}', './index.html'],
+  content: [
+    "./index.html",
+    "./client/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       fontFamily: { ubuntu: ['Ubuntu', 'sans-serif'] },
@@ -7,3 +11,8 @@ module.exports = {
   },
   plugins: [],
 }
+
+
+
+    
+
