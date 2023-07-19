@@ -24,7 +24,10 @@ function Footer() {
         <Link to="https://github.com/maia-tarapipipi" target="_blank">
           <BsGithub size={40} className="mx-5 hover:fill-slate-500" />
         </Link>
-        <Link to="../../dist/Documents/Maia_Tarapipipi_CV.pdf" target="_blank">
+        <Link
+          to="../../public/Documents/Maia_Tarapipipi_CV.pdf"
+          target="_blank"
+        >
           <BsFileText size={40} className="mx-5 hover:fill-slate-500" />
         </Link>
       </div>
