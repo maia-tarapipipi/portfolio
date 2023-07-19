@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom'
-import Footer from './Footer'
+import SubMenu from './SubMenu'
 import Header from './Header'
 
 function App() {
@@ -8,8 +8,8 @@ function App() {
       {/* TO DO: add components to render here */}
       <div className="font-ubuntu">
         <Header />
+        <SubMenu />
         <Outlet />
-        <Footer />
       </div>
     </>
   )
