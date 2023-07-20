@@ -4,7 +4,7 @@ import { FaPaperPlane } from 'react-icons/fa'
 import { BsGithub } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import { BsFileText } from 'react-icons/bs'
-// import { CV } from '../../public/Documents'
+// import { CV } from '../../public/Documents/Maia_Tarapipipi_CV.pdf'
 
 function Footer() {
   return (
@@ -24,10 +24,7 @@ function Footer() {
         <Link to="https://github.com/maia-tarapipipi" target="_blank">
           <BsGithub size={40} className="mx-5 hover:fill-slate-500" />
         </Link>
-        <Link
-          to="../../public/Documents/Maia_Tarapipipi_CV.pdf"
-          target="_blank"
-        >
+        <Link to="/Documents/Maia_Tarapipipi_CV.pdf" target="_blank">
           <BsFileText size={40} className="mx-5 hover:fill-slate-500" />
         </Link>
       </div>
