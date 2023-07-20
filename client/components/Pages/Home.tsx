@@ -53,10 +53,6 @@ function Home() {
     pauseOnHover: true,
   }
 
-  // add buttons to ON TOP of sliders
-  // sliders change colour on hover - bg on button changes colour and bg becomes transparent
-  // edit slider animation to be smoother
-
   return (
     <div>
       <div className="flex flex-row max-md:flex-col  justify-evenly items-center">
