@@ -2,17 +2,16 @@ function PinkyPromise() {
   return (
     <div>
       <h1>Pinky Promise</h1>
-
       <p>
         What is more appealing than keeping your friends, family, loved ones or
         enemies accountable with the threat of social pressure?
       </p>
       <p>Well do we have the app for you!</p>
       <p>
-        Welcome to Pinky Promise! The brain child of 5 talented Dev Academy
-        graduates which aim to help people make and keep promises between each
-        other. Worked on in a 10 day period as a final group project our aim was
-        to create an app which a user can:
+        Welcome to Pinky Promise! The brain child of 5 talented and enthusiastic
+        Dev Academy graduates which aim to help people make and keep promises
+        between each other. Worked on in a 10 day period as a final group
+        project our aim was to create an app which a user can:
         <ul>
           <li>log into using Auth-0 securely,</li>
           <li>profile with your name, username, and bio,</li>
@@ -26,6 +25,19 @@ function PinkyPromise() {
           </li>
         </ul>
       </p>
+      <p className="">
+        follow{' '}
+        <a
+          href="https://github.com/maia-tarapipipi/pinky-promise"
+          target="_blank"
+          rel="noreferrer"
+          className="text-slate-700 hover:text-slate-400"
+        >
+          this{' '}
+        </a>
+        link to visit the repo!
+      </p>
+
       <div>
         <p>
           below is a comprehensive wireframe which we created during our
