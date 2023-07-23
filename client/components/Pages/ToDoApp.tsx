@@ -11,9 +11,17 @@ function ToDoApp() {
       <p>
         Welcome to To Do App! The aim for this project was to create a simple
         to-do app which users can:
-        <ul className="list-disc">
+        <ul className="list-disc pl-10">
           <li>Create a to-do which is stored on the database</li>
           <li>Store global state with Redux</li>
+        </ul>
+      </p>
+
+      <p>
+        In the future I plan:
+        <ul className="list-disc pl-10">
+          <li>to personalize the styling</li>
+          <li>have it fully deployed</li>
           <li>Delete a to-do</li>
         </ul>
       </p>
