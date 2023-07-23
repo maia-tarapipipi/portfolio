@@ -10,6 +10,7 @@ function ToDoApp() {
       </Link>
       <p>
         Welcome to To Do App! The aim for this project was to create a simple
+        <img src="/To-do-app-screenshot.png" alt="to-do app" />
         to-do app which users can:
         <ul className="list-disc pl-10">
           <li>Create a to-do which is stored on the database</li>
