@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function PinkyPromise() {
   return (
-    <div>
+    <div className="px-20">
       <h1 className="text-2xl ">Pinky Promise</h1>
       <Link
         to="https://github.com/maia-tarapipipi/pinky-promise"
@@ -12,16 +12,11 @@ function PinkyPromise() {
         <BsGithub size={40} className="mx-5 hover:fill-slate-500" />
       </Link>
       <p>
-        What is more appealing than keeping your friends, family, loved ones or
-        enemies accountable with the threat of social pressure?
-      </p>
-      <p>Well do we have the app for you!</p>
-      <p>
         Welcome to Pinky Promise! The brain child of 5 talented and enthusiastic
         Dev Academy graduates which aim to help people make and keep promises
         between each other. Worked on in a 10 day period as a final group
         project our aim was to create an app which a user can:
-        <ul>
+        <ul className="list-disc">
           <li>log into using Auth-0 securely,</li>
           <li>profile with your name, username, and bio,</li>
           <li>add a friend,</li>

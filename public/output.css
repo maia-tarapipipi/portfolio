@@ -631,6 +631,10 @@ video {
   resize: both;
 }
 
+.list-disc {
+  list-style-type: disc;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -677,6 +681,19 @@ video {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-20 {
+  padding: 5rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .text-center {

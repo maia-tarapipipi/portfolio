@@ -1,4 +1,5 @@
 import PinkyPromise from './PinkyPromise'
+import ToDoApp from './ToDoApp'
 
 function Home() {
   return (
@@ -30,6 +31,7 @@ function Home() {
         </div>
       </div>
           <PinkyPromise />
+          <ToDoApp />
     </div>
   )
 }
