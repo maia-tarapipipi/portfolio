@@ -9,6 +9,7 @@ function PinkyPromise() {
         to="https://github.com/maia-tarapipipi/pinky-promise"
         target="_blank"
       >
+        Visit the Repo!
         <BsGithub size={40} className="mx-5 hover:fill-slate-500" />
       </Link>
       <p>
@@ -33,7 +34,6 @@ function PinkyPromise() {
         <Link to="public/pinkyPromiseWireframe.png" target="_blank">
           Click here to see the wireframe design
         </Link>
-        {/* <img src="" alt="pinky promise wireframe" /> */}
       </div>
       <div className="pl-10">
         <p className="text-lg">Skills</p>

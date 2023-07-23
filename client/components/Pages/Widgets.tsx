@@ -6,12 +6,13 @@ function Widgets() {
     <div className="px-20 pb-10">
       <h1 className="text-2xl ">Widgets App</h1>
       <Link to="https://github.com/maia-tarapipipi/widgets-app" target="_blank">
+      Visit the Repo!
         <BsGithub size={40} className="mx-5 hover:fill-slate-500" />
       </Link>
+      <img src="/Widgets-app-screenshot.png" alt="Widgets" className='w-1/4'/>
       <p>
-        Welcome to Widgets App!
-        <img src="/Widgets-app-screenshot.png" alt="Widgets" />
-        The aim was to create a basic app to practice using:
+        Welcome to Widgets App! The aim was to create a basic app to practice
+        using:
         <ul className="list-disc pl-10">
           <li>Prop drilling functions</li>
           <li>profile with your name, username, and bio,</li>

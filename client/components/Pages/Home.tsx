@@ -1,5 +1,7 @@
 import PinkyPromise from './PinkyPromise'
+import Skills from './Skills'
 import ToDoApp from './ToDoApp'
+import Widgets from './Widgets'
 
 function Home() {
   return (
@@ -28,31 +30,13 @@ function Home() {
             around personal identity, whakapapa and my personal journey of Māori
             in modern spaces.
           </p>
-          <p className="text-left text-lg">
-            Tech Stack:
-            <ul className="text-left list-disc pl-10 ">
-              <li>HTML5</li>
-              <li>CSS and Tailwind</li>
-              <li>Javascript</li>
-              <li>Node.js</li>
-              <li>Express.js</li>
-              <li>Knex.js</li>
-              <li>Typescript</li>
-              <li>Supertest</li>
-              <li>SQLite</li>
-              <li>React</li>
-              <li>React Query / tanstack</li>
-              <li>Framer-motion</li>
-              <li>Handlebars</li>
-              <li>Jest</li>
-              <li>Vitest</li>
-            </ul>
-          </p>
         </div>
       </div>
+      <Skills />
       <h1 className="text-2xl text-center">Projects</h1>
       <PinkyPromise />
       <ToDoApp />
+      <Widgets />
     </div>
   )
 }
