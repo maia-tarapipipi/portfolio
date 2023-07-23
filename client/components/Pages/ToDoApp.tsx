@@ -17,13 +17,6 @@ function ToDoApp() {
           <li>Delete a to-do</li>
         </ul>
       </p>
-      <div>
-        <p>
-          below is a comprehensive wireframe which we created during our
-          planning stage
-        </p>
-        {/* <img src="/pinkyPromiseWireframe.png" alt="pinky promise wireframe" /> */}
-      </div>
     </div>
   )
 }

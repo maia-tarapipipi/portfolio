@@ -30,8 +30,9 @@ function Home() {
           </p>
         </div>
       </div>
-          <PinkyPromise />
-          <ToDoApp />
+      <h1 className="text-2xl text-center">Projects</h1>
+      <PinkyPromise />
+      <ToDoApp />
     </div>
   )
 }

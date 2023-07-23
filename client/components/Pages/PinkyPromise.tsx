@@ -16,7 +16,7 @@ function PinkyPromise() {
         Dev Academy graduates which aim to help people make and keep promises
         between each other. Worked on in a 10 day period as a final group
         project our aim was to create an app which a user can:
-        <ul className="list-disc">
+        <ul className="list-disc text-center">
           <li>log into using Auth-0 securely,</li>
           <li>profile with your name, username, and bio,</li>
           <li>add a friend,</li>
