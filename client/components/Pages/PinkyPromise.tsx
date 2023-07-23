@@ -1,7 +1,16 @@
+import { BsGithub } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
+
 function PinkyPromise() {
   return (
     <div>
-      <h1>Pinky Promise</h1>
+      <h1 className="text-2xl ">Pinky Promise</h1>
+      <Link
+        to="https://github.com/maia-tarapipipi/pinky-promise"
+        target="_blank"
+      >
+        <BsGithub size={40} className="mx-5 hover:fill-slate-500" />
+      </Link>
       <p>
         What is more appealing than keeping your friends, family, loved ones or
         enemies accountable with the threat of social pressure?
@@ -25,19 +34,6 @@ function PinkyPromise() {
           </li>
         </ul>
       </p>
-      <p className="">
-        follow{' '}
-        <a
-          href="https://github.com/maia-tarapipipi/pinky-promise"
-          target="_blank"
-          rel="noreferrer"
-          className="text-slate-700 hover:text-slate-400"
-        >
-          this{' '}
-        </a>
-        link to visit the repo!
-      </p>
-
       <div>
         <p>
           below is a comprehensive wireframe which we created during our

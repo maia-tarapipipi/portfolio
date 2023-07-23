@@ -4,6 +4,7 @@ import { FaPaperPlane } from 'react-icons/fa'
 import { BsGithub } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import { BsFileText } from 'react-icons/bs'
+
 // import { CV } from '../../public/Documents/Maia_Tarapipipi_CV.pdf'
 
 function Footer() {

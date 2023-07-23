@@ -1,3 +1,5 @@
+import PinkyPromise from './PinkyPromise'
+
 function Home() {
   return (
     <div>
@@ -27,6 +29,7 @@ function Home() {
           </p>
         </div>
       </div>
+          <PinkyPromise />
     </div>
   )
 }
