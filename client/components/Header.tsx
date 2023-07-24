@@ -1,3 +1,5 @@
+import Nav from './Nav/Nav'
+
 function Header() {
   return (
     <div>
@@ -7,6 +9,7 @@ function Header() {
           Full-Stack Software Developer | Textile Artist
         </div>
       </div>
+      <Nav />
       <div className="mb-20"></div>
     </div>
   )

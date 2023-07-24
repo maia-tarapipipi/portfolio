@@ -1,7 +1,5 @@
-import PinkyPromise from './PinkyPromise'
+import Gallery from './Gallery'
 import Skills from './Skills'
-import ToDoApp from './ToDoApp'
-import Widgets from './Widgets'
 
 function Home() {
   return (
@@ -33,10 +31,7 @@ function Home() {
         </div>
       </div>
       <Skills />
-      <h1 className="text-2xl text-center">Projects</h1>
-      <PinkyPromise />
-      <ToDoApp />
-      <Widgets />
+      {/* <Gallery /> */}
     </div>
   )
 }

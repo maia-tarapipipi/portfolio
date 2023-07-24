@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { IoClose, IoMenu } from 'react-icons/io5'
 import SoftwareDevelopmentNav from './SoftwareDevelopmentNav'
-import ArtAndDesignNav from './ArtAndDesignNav'
+// import ArtAndDesignNav from './ArtAndDesignNav'
 
 function Nav() {
   const [open, setOpen] = useState(false)
@@ -52,7 +52,7 @@ function Nav() {
               {openSoftware && <SoftwareDevelopmentNav />}
             </li>
           </div>
-          <div>
+          {/* <div>
             <button onClick={toggleMenuNav} className="hover:text-slate-500">
               art and design
             </button>
@@ -63,6 +63,7 @@ function Nav() {
           <Link to="/contact" className="hover:text-slate-500">
             contact
           </Link>
+        </div> */}
         </div>
       </ul>
     </div>

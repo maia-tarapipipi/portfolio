@@ -10,6 +10,8 @@ import App from './components/App'
 import Home from '../client/components/Pages/Home'
 import Contact from './components/Pages/Contact'
 import PinkyPromise from './components/Pages/PinkyPromise'
+import ToDoApp from './components/Pages/ToDoApp'
+import Widgets from './components/Pages/Widgets'
 
 export const routes = createRoutesFromElements(
   // TO DO: Error Component errorElement={<ErrorPage />}
@@ -17,7 +19,8 @@ export const routes = createRoutesFromElements(
     <Route index element={<Home />} />
     <Route index path="/contact" element={<Contact />} />
     <Route index path="/pinky-promise" element={<PinkyPromise />} />
-    {/* <Route path="add-friends" element={} /> */}
+    <Route index path="/to-do-app" element={<ToDoApp />} />
+    <Route index path="/widgets" element={<Widgets />} />
     {/* <Route index  path="/NoHeaKoe" element={<NoHeaKoe />} /> */}
     {/* <Route index path="/kainga" element={<kainga  />} /> */}
   </Route>,

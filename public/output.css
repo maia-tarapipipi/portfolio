@@ -609,16 +609,12 @@ video {
   width: 25%;
 }
 
-.w-screen {
-  width: 100vw;
-}
-
-.w-40 {
-  width: 10rem;
-}
-
 .w-80 {
   width: 20rem;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .-translate-x-1\/2 {
@@ -700,12 +696,12 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.pl-10 {
-  padding-left: 2.5rem;
-}
-
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
 }
 
 .text-left {
