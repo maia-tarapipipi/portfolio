@@ -23,6 +23,7 @@ export const routes = createRoutesFromElements(
     <Route index path="/to-do-app" element={<ToDoApp />} />
     <Route index path="/widgets" element={<Widgets />} />
     <Route index path="/portfolio" element={<Portfolio />} />
+    {/* <Route index path="/about" element={<About />} /> */}
     {/* <Route index  path="/NoHeaKoe" element={<NoHeaKoe />} /> */}
     {/* <Route index path="/kainga" element={<kainga  />} /> */}
   </Route>,

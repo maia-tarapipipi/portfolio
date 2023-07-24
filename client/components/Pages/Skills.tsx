@@ -22,23 +22,34 @@ function Widgets() {
           <li>Vitest</li>
         </ul>
         <ul>
-          <p className="text-left text-lg  w-1/2">Human Skills:</p>
+          <p className="text-left text-lg  w-1/2">Core Skills:</p>
           <li className="pb-2">
-            Problem Solver: My work in my previous industry as production
-            assistant has set me up well to problem solve. Often in the creative
-            process, you need creative solutions.
+            Adaptable and Resourceful: As a production assistant in my previous
+            industry, I honed my skills in problem-solving and adaptability. The
+            creative process often requires thinking outside the box and finding
+            innovative solutions to challenges that arise. I have become adept
+            at navigating various situations, identifying opportunities, and
+            quickly adapting to new circumstances.
           </li>
           <li className="pb-2">
-            Quick Learner: In my previous work it was expected that I would
-            learn on the job and this has taught me how to learn new ideas and
-            techniques quickly and apply them. The dev academy bootcamp really
-            put this skill to the test and I learned that i found joy in the
-            process.
+            Continuous Learner: Throughout my career, I have embraced a growth
+            mindset, always eager to learn and expand my knowledge. In my
+            previous role, I thrived on learning new ideas and techniques on the
+            job, and this drive for continuous improvement carried over to the
+            Dev Academy bootcamp. Embracing the learning journey, I discovered a
+            genuine joy in acquiring new skills and knowledge, which fuels my
+            passion for development and fuels my motivation to keep evolving as
+            a professional.
           </li>
+
           <li className="pb-2">
-            Empathetic: As a Māori woman, I come from a diverse background. This
-            diversity has helped me become more empathetic to others
-            perspectives and helped me connect with different walks of life. 
+            Empathy and Cultural Understanding: As a Māori woman, I bring a rich
+            and diverse background to my work. This unique perspective has
+            nurtured my sense of empathy, enabling me to better understand and
+            connect with people from various walks of life. Embracing different
+            viewpoints and cultural nuances is an integral part of who I am, and
+            it enhances my ability to build meaningful relationships and
+            collaborate effectively with others.
           </li>
         </ul>
       </div>
