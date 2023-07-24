@@ -38,7 +38,7 @@ function Widgets() {
           <li className="pb-2">
             Empathetic: As a Māori woman, I come from a diverse background. This
             diversity has helped me become more empathetic to others
-            perspectives and helped me connect with different walks of life.
+            perspectives and helped me connect with different walks of life. 
           </li>
         </ul>
       </div>
