@@ -1,5 +1,4 @@
 import { BsGithub } from 'react-icons/bs'
-import ReactPlayer from 'react-player'
 import { Link } from 'react-router-dom'
 
 function Portfolio() {
@@ -9,13 +8,17 @@ function Portfolio() {
       <div className="flex flex-row">
         <div className="w-3/4">
           <p>
-            This website your&apos;e currently viewing was also a project
-            I&apos;ve built! I plan for this portfolio to be under continuous
-            construction as I continue my learning and development skills. Any
-            added features or projects you might see first on my wireframe. This
-            portfolio is a great way for me to refine my skills in front-end
-            development as well as being able to play with and learn new
-            technologies.
+            This website you are currently viewing is a project that I have
+            personally built! Welcome to my portfolio, which I plan to
+            continuously improve as I advance my learning and development
+            skills. As I embark on my journey of growth, you can expect to see
+            additional features and projects that I will showcase through my
+            wireframe. This portfolio serves as a valuable platform for refining
+            my front-end development skills while offering me the opportunity to
+            explore and learn new technologies. Through this process, I aim to
+            create a visually appealing and interactive experience for visitors
+            like you. Stay tuned for more exciting updates and projects to come.
+            Happy browsing!
           </p>
           <p>Features Implimented:</p>
           <ul className="list-disc pl-10">
@@ -50,7 +53,10 @@ function Portfolio() {
       </div> */}
       <div className="pl-10">
         <p className="text-center text-lg">Future Plans:</p>
-        <p></p>
+        <ul className="list-disc pl-10">
+          <li>Import images from hosting site to improve performance</li>
+          <li></li>
+        </ul>
       </div>
     </div>
   )
