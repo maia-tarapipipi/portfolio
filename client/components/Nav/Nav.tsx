@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { IoClose, IoMenu } from 'react-icons/io5'
 import SoftwareDevelopmentNav from './SoftwareDevelopmentNav'
-// import ArtAndDesignNav from './ArtAndDesignNav'
+import ArtAndDesignNav from './ArtAndDesignNav'
 
 function Nav() {
   const [open, setOpen] = useState(false)
@@ -48,7 +48,7 @@ function Nav() {
             <button onClick={toggleSubMenu} className="hover:text-slate-500">
               software development
             </button>
-            <li className="max-lg:fixed lg:absolute  lg:top-10 lg:left-1/2 lg:transform lg:-translate-x-1/2 z-10 bg-white">
+            <li className="w-screen max-lg:fixed lg:absolute lg:top-10 lg:left-1/4 z-10 bg-white ">
               {openSoftware && <SoftwareDevelopmentNav />}
             </li>
           </div>

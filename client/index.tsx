@@ -12,6 +12,7 @@ import Contact from './components/Pages/Contact'
 import PinkyPromise from './components/Pages/PinkyPromise'
 import ToDoApp from './components/Pages/ToDoApp'
 import Widgets from './components/Pages/Widgets'
+import Portfolio from './components/Pages/Portfolio'
 
 export const routes = createRoutesFromElements(
   // TO DO: Error Component errorElement={<ErrorPage />}
@@ -21,6 +22,7 @@ export const routes = createRoutesFromElements(
     <Route index path="/pinky-promise" element={<PinkyPromise />} />
     <Route index path="/to-do-app" element={<ToDoApp />} />
     <Route index path="/widgets" element={<Widgets />} />
+    <Route index path="/portfolio" element={<Portfolio />} />
     {/* <Route index  path="/NoHeaKoe" element={<NoHeaKoe />} /> */}
     {/* <Route index path="/kainga" element={<kainga  />} /> */}
   </Route>,

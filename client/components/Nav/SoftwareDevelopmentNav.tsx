@@ -12,6 +12,9 @@ function SoftwareDevelopmentNav() {
       <Link className="mx-10 hover:text-slate-500" to="/widgets">
         widgets app
       </Link>
+      <Link className="mx-10 hover:text-slate-500" to="/portfolio">
+        portfolio
+      </Link>
     </div>
   )
 }
