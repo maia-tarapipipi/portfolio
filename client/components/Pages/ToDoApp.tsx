@@ -41,7 +41,10 @@ function ToDoApp() {
 
       <h1 className="text-center text-lg">Demo</h1>
       <div className="flex justify-center">
-        <ReactPlayer playing url="https://youtu.be/vZRTen1HOsE" />
+        <ReactPlayer
+          playing
+          url="https://www.youtube.com/watch?v=7rwU2hMRHOk"
+        />
       </div>
 
       <p>Future Plans:</p>

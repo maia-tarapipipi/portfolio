@@ -40,7 +40,7 @@ function Widgets() {
       </div>
       <h1 className="text-center text-lg">Demo</h1>
       <div className="flex justify-center">
-        <ReactPlayer playing url="https://youtu.be/vZRTen1HOsE" />
+        <ReactPlayer playing url="youtube.com/watch?v=YAcs6A4gOUk" />
       </div>
       <div className="pl-10">
         <p className="text-lg">Future Plans:</p>
