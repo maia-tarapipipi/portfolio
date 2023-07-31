@@ -71,9 +71,9 @@ function PinkyPromise() {
         </div>
       </div>
       <h1 className="text-center text-lg">Demo</h1>
-      {/* <div className="flex justify-center">
-        <ReactPlayer playing url="https://youtu.be/vZRTen1HOsE" />
-      </div> */}
+      <div className="flex justify-center">
+        <ReactPlayer playing url="https://youtu.be/Aiy0yg8lJns" />
+      </div>
       <div className="pl-10">
         <p className="text-center text-lg">Future Plans:</p>
         <p>
