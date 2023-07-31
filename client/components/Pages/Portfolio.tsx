@@ -55,6 +55,10 @@ function Portfolio() {
         <p className="text-center text-lg">Future Plans:</p>
         <ul className="list-disc pl-10">
           <li>Import images from hosting site to improve performance</li>
+          <li>
+            Fix responsiveness as per the wireframe, currently in App doesnt
+            work in mobile view only on desktop
+          </li>
         </ul>
       </div>
     </div>

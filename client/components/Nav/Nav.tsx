@@ -48,7 +48,7 @@ function Nav() {
             <button onClick={toggleSubMenu} className="hover:text-slate-500">
               software development
             </button>
-            <li className="w-screen max-lg:fixed lg:absolute lg:top-10 lg:left-1/4 z-10 bg-white ">
+            <li className="w-screen max-lg:fixed lg:absolute lg:top-10 lg:left-96 z-10 justify-center bg-white ">
               {openSoftware && <SoftwareDevelopmentNav />}
             </li>
           </div>
