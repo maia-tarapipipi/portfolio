@@ -15,7 +15,9 @@ function PinkyPromise() {
             15-week boot camp, we dedicated our final 10 days to bring our
             learning to life with this app. Our goal is to create a platform
             that enables users to foster trust and accountability through
-            meaningful promises.
+            meaningful promises. Very proudly for the final presentation at Dev
+            Academy, we had a fully deployed app which our friends and family in
+            attendance were able to use.
           </p>
           <p>Features Implimented:</p>
           <ul className="list-disc pl-10">
