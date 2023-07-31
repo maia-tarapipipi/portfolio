@@ -62,7 +62,7 @@ function PinkyPromise() {
         </div>
         <div className="text-lg flex justify-center hover:text-slate-500 w-1/4 items-center">
           <Link
-            to="https://github.com/maia-tarapipipi/pinky-promise"
+            to="https://github.com/kahikatea-2023/pinky-promise"
             target="_blank"
           >
             <BsGithub size={80} className="mx-5 hover:fill-slate-500" />
