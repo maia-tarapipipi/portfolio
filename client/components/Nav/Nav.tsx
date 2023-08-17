@@ -33,7 +33,7 @@ function Nav() {
               : 'hidden ' + 'w-full lg:flex justify-center space-x-10 lg:w-auto'
           }
         >
-          <div className="flex-col">
+          <div>
             <Link to="/" className="hover:text-slate-500">
               home
             </Link>
@@ -41,19 +41,8 @@ function Nav() {
           <div>
             <button onClick={toggleSubMenu} className="hover:text-slate-500">
               software development
+          {openSoftware && <SoftwareDevelopmentNav />}
             </button>
-            <div
-              // className="w-screen max-lg:fixed lg:absolute lg:top-10 lg:left-96 z-10 justify-center bg-white "
-              className={
-                open && width < breakpoint
-                  ? 'block' +
-                    'w-full flex justify-center items-center lg:w-auto '
-                  : 'hidden' +
-                    'w-full lg:flex justify-center items-center lg:items-center space-x-10 lg:w-auto'
-              }
-            >
-              {openSoftware && <SoftwareDevelopmentNav />}
-            </div>
           </div>
         </div>
       </div>
