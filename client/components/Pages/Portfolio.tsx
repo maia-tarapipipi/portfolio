@@ -47,10 +47,7 @@ function Portfolio() {
           </Link>
         </div>
       </div>
-      {/* <h1 className="text-center text-lg">Demo</h1>
-      <div className="flex justify-center">
-        <ReactPlayer playing url="https://youtu.be/vZRTen1HOsE" />
-      </div> */}
+
       <div className="pl-10">
         <p className="text-center text-lg">Future Plans:</p>
         <ul className="list-disc pl-10">

@@ -2,14 +2,11 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { IoClose, IoMenu } from 'react-icons/io5'
 import SoftwareDevelopmentNav from './SoftwareDevelopmentNav'
-import ArtAndDesignNav from './ArtAndDesignNav'
 
 function Nav() {
   const [open, setOpen] = useState(false)
   const [openSoftware, setOpenSoftware] = useState(false)
-  const [openNav, setOpenNav] = useState(false)
   const [width, setWidth] = useState(window.innerWidth)
-
   const breakpoint = 1024
 
   const toggleMenu = () => {
@@ -18,54 +15,48 @@ function Nav() {
   const toggleSubMenu = () => {
     setOpenSoftware((prev) => !prev)
   }
-  const toggleMenuNav = () => {
-    setOpenNav((prev) => !prev)
-  }
 
   useEffect(() => {
     window.addEventListener('resize', () => setWidth(window.innerWidth))
   }, [])
 
   return (
-    <div className="relative text-2xl">
-      <button className="lg:hidden ml-10" onClick={toggleMenu}>
+    <div className="text-2xl">
+      <button className="lg:hidden" onClick={toggleMenu}>
         {open ? <IoClose /> : <IoMenu />}
       </button>
-      <ul className="absolute z-20 bg-white w-screen">
+      <div className="bg-white">
         <div
           className={
             open && width < breakpoint
-              ? 'block ml-10'
-              : 'hidden w-screen lg:flex justify-evenly'
+              ? 'block'
+              : 'hidden ' + 'w-full lg:flex justify-center space-x-10 lg:w-auto'
           }
         >
-          <li className="flex-col">
+          <div className="flex-col">
             <Link to="/" className="hover:text-slate-500">
               home
             </Link>
-          </li>
+          </div>
           <div>
             <button onClick={toggleSubMenu} className="hover:text-slate-500">
               software development
             </button>
-            <li className="w-screen max-lg:fixed lg:absolute lg:top-10 lg:left-96 z-10 justify-center bg-white ">
+            <div
+              // className="w-screen max-lg:fixed lg:absolute lg:top-10 lg:left-96 z-10 justify-center bg-white "
+              className={
+                open && width < breakpoint
+                  ? 'block' +
+                    'w-full flex justify-center items-center lg:w-auto '
+                  : 'hidden' +
+                    'w-full lg:flex justify-center items-center lg:items-center space-x-10 lg:w-auto'
+              }
+            >
               {openSoftware && <SoftwareDevelopmentNav />}
-            </li>
+            </div>
           </div>
-          {/* <div>
-            <button onClick={toggleMenuNav} className="hover:text-slate-500">
-              art and design
-            </button>
-            <li className="max-lg:fixed  lg:absolute  lg:top-10 lg:left-1/2 lg:transform lg:-translate-x-1/2 z-10 bg-white">
-              {openNav && <ArtAndDesignNav />}
-            </li>
-          </div>
-          <Link to="/contact" className="hover:text-slate-500">
-            contact
-          </Link>
-        </div> */}
         </div>
-      </ul>
+      </div>
     </div>
   )
 }
