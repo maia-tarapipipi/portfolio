@@ -40,10 +40,12 @@ function Nav() {
           </div>
           <div>
             <button onClick={toggleSubMenu} className="hover:text-slate-500">
-              software development
-          {openSoftware && <SoftwareDevelopmentNav />}
+              projects
             </button>
           </div>
+        </div>
+        <div className="flex justify-center">
+          {openSoftware && open && <SoftwareDevelopmentNav />}
         </div>
       </div>
     </div>
