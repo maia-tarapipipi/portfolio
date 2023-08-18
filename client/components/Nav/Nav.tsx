@@ -48,7 +48,7 @@ function Nav() {
           </div>
         </div>
         <div className="flex justify-center md:text-xs">
-          {openSoftware && open && <SoftwareDevelopmentNav />}
+          {openSoftware && <SoftwareDevelopmentNav />}
         </div>
       </div>
     </div>
