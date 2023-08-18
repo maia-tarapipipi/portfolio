@@ -7,16 +7,16 @@ function ToDoApp() {
     <div>
       <h1 className="text-center text-2xl">To Do App</h1>
 
-      <div className="text-lg flex justify-evenly items-center">
+      <div className="text-lg flex justify-evenly items-center max-lg:flex-col">
         <ReactPlayer url="https://www.youtube.com/watch?v=7rwU2hMRHOk" />
         <Link to="https://github.com/maia-tarapipipi/to-do-app" target="_blank">
-          <BsGithub size={80} className="mx-5 hover:fill-slate-500" />
+          <BsGithub size={80} className="mx-5 mt-2 hover:fill-slate-500" />
           Visit the Repo!
         </Link>
       </div>
       <div className="flex flex-row">
         <div>
-          <p>
+          <p className="text-center">
             Welcome to To Do App! My aim with this project is to provide a
             simple and effective way for you to keep track of all your tasks and
             stay organized!{' '}

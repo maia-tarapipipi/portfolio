@@ -9,9 +9,22 @@ function PinkyPromise() {
       <h1 className="text-2xl">Pinky Promise</h1>
 
       <h1 className="text-center text-lg">Demo</h1>
-
+      {/* <Link to="https://youtu.be/Aiy0yg8lJns" className="md:hidden">
+        Visit the video demo!
+      </Link> */}
       <div className="text-lg flex justify-center items-center max-lg:flex-col flex-row">
-        <ReactPlayer url="https://youtu.be/Aiy0yg8lJns" />
+        <div>
+          <ReactPlayer
+            className="max-md:hidden"
+            url="https://youtu.be/Aiy0yg8lJns"
+          />
+          <iframe
+            title="Pinky Promise Demo"
+            className="md:hidden border-0"
+            width="320"
+            src="https://www.youtube.com/embed/Aiy0yg8lJns"
+          ></iframe>
+        </div>
         <Link
           to="https://github.com/kahikatea-2023/pinky-promise"
           target="_blank"
@@ -30,7 +43,7 @@ function PinkyPromise() {
           Visit the wireframe design
         </Link>
       </div>
-      <div className="">
+      <div className="w-full">
         <div>
           <p>
             Welcome to Pinky Promise! We are a team of 5 talented and
@@ -102,3 +115,7 @@ function PinkyPromise() {
 }
 
 export default PinkyPromise
+
+{
+  /* <iframe width="1120" height="728" src="https://www.youtube.com/embed/Aiy0yg8lJns" title="Pinky Promise Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */
+}
