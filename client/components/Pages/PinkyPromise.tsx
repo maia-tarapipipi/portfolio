@@ -1,13 +1,37 @@
 import { BsGithub } from 'react-icons/bs'
+import { FaFigma } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import ReactPlayer from 'react-player'
 
 function PinkyPromise() {
   return (
-    <div className="px-20 pb-10">
-      <h1 className="text-2xl text-center">Pinky Promise</h1>
-      <div className="flex flex-row">
-        <div className="w-3/4">
+    <div className="text-center">
+      <h1 className="text-2xl">Pinky Promise</h1>
+
+      <h1 className="text-center text-lg">Demo</h1>
+
+      <div className="text-lg flex justify-center items-center max-lg:flex-col flex-row">
+        <ReactPlayer url="https://youtu.be/Aiy0yg8lJns" />
+        <Link
+          to="https://github.com/kahikatea-2023/pinky-promise"
+          target="_blank"
+          className=" hover:text-slate-500 m-4"
+        >
+          <BsGithub size={80} className="mx-5" />
+          Visit the Repo!
+        </Link>
+
+        <Link
+          to="https://www.figma.com/file/sNIyAtAcP5v3chOp3jlO7s/Pinky-Promise-Wireframe?type=design&node-id=0-1&mode=design&t=4FJuInfmjO8pfihB-0"
+          target="_blank"
+          className="text-center text-xl hover:text-slate-500"
+        >
+          <FaFigma size={80} className="ml-20" />
+          Visit the wireframe design
+        </Link>
+      </div>
+      <div className="">
+        <div>
           <p>
             Welcome to Pinky Promise! We are a team of 5 talented and
             enthusiastic graduates from Dev Academy, driven by the desire to
@@ -20,7 +44,7 @@ function PinkyPromise() {
             attendance were able to use.
           </p>
           <p>Features Implimented:</p>
-          <ul className="list-disc pl-10">
+          <ul className="list-disc pl-10 text-left">
             <li>
               Secure Authentication with Auth0: Using Auth0 for authentication
               is a good choice as it provides a secure and reliable way for
@@ -54,27 +78,7 @@ function PinkyPromise() {
               commitments and fosters a sense of responsibility.
             </li>
           </ul>
-          <Link
-            to="https://www.figma.com/file/sNIyAtAcP5v3chOp3jlO7s/Pinky-Promise-Wireframe?type=design&node-id=0-1&mode=design&t=4FJuInfmjO8pfihB-0"
-            target="_blank"
-            className="text-center text-xl hover:text-slate-500"
-          >
-            Click here to see the wireframe design
-          </Link>
         </div>
-        <div className="text-lg flex justify-center hover:text-slate-500 w-1/4 items-center">
-          <Link
-            to="https://github.com/kahikatea-2023/pinky-promise"
-            target="_blank"
-          >
-            <BsGithub size={80} className="mx-5 hover:fill-slate-500" />
-            Visit the Repo!
-          </Link>
-        </div>
-      </div>
-      <h1 className="text-center text-lg">Demo</h1>
-      <div className="flex justify-center">
-        <ReactPlayer playing url="https://youtu.be/Aiy0yg8lJns" />
       </div>
       <div className="pl-10">
         <p className="text-center text-lg">Future Plans:</p>

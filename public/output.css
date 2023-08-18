@@ -525,6 +525,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -547,6 +551,10 @@ video {
 
 .z-20 {
   z-index: 20;
+}
+
+.m-4 {
+  margin: 1rem;
 }
 
 .mx-10 {
@@ -575,6 +583,22 @@ video {
 
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
+.ml-20 {
+  margin-left: 5rem;
+}
+
+.ml-24 {
+  margin-left: 6rem;
 }
 
 .block {
@@ -611,6 +635,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .-translate-x-1\/2 {
@@ -781,19 +809,11 @@ video {
   .max-lg\:flex-col {
     flex-direction: column;
   }
-
-  .max-lg\:justify-center {
-    justify-content: center;
-  }
 }
 
 @media not all and (min-width: 768px) {
   .max-md\:w-full {
     width: 100%;
-  }
-
-  .max-md\:justify-center {
-    justify-content: center;
   }
 }
 
