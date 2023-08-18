@@ -36,7 +36,7 @@ function PinkyPromise() {
         </Link>
 
         <Link
-          to="https://www.figma.com/file/sNIyAtAcP5v3chOp3jlO7s/Pinky-Promise-Wireframe?type=design&node-id=0-1&mode=design&t=4FJuInfmjO8pfihB-0"
+          to="https://www.figma.com/file/Tf8TbiSY3RvK8lYr5XvAWc/Pinky-Promise-Wireframe?type=design&node-id=0%3A1&mode=design&t=uwHMlcDq66rAwdA7-1"
           target="_blank"
           className="text-center text-lg hover:text-slate-500"
         >
