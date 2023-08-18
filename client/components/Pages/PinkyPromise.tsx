@@ -21,14 +21,15 @@ function PinkyPromise() {
           <iframe
             title="Pinky Promise Demo"
             className="md:hidden border-0"
-            width="320"
+            width="420"
+            height="315"
             src="https://www.youtube.com/embed/Aiy0yg8lJns"
           ></iframe>
         </div>
         <Link
           to="https://github.com/kahikatea-2023/pinky-promise"
           target="_blank"
-          className=" hover:text-slate-500 m-4"
+          className=" hover:text-slate-500 text-lg m-4"
         >
           <BsGithub size={80} className="mx-5" />
           Visit the Repo!
@@ -37,7 +38,7 @@ function PinkyPromise() {
         <Link
           to="https://www.figma.com/file/sNIyAtAcP5v3chOp3jlO7s/Pinky-Promise-Wireframe?type=design&node-id=0-1&mode=design&t=4FJuInfmjO8pfihB-0"
           target="_blank"
-          className="text-center text-xl hover:text-slate-500"
+          className="text-center text-lg hover:text-slate-500"
         >
           <FaFigma size={80} className="ml-20" />
           Visit the wireframe design

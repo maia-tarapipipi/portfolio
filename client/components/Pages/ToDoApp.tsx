@@ -8,7 +8,20 @@ function ToDoApp() {
       <h1 className="text-center text-2xl">To Do App</h1>
 
       <div className="text-lg flex justify-evenly items-center max-lg:flex-col">
-        <ReactPlayer url="https://www.youtube.com/watch?v=7rwU2hMRHOk" />
+        <div>
+          <ReactPlayer
+            className="max-md:hidden"
+            url="https://www.youtube.com/watch?v=7rwU2hMRHOk"
+          />
+          <iframe
+            title="Pinky Promise Demo"
+            className="md:hidden border-0"
+            width="420"
+            height="315"
+            src="https://www.youtube.com/embed/7rwU2hMRHOk"
+          ></iframe>
+        </div>
+
         <Link to="https://github.com/maia-tarapipipi/to-do-app" target="_blank">
           <BsGithub size={80} className="mx-5 mt-2 hover:fill-slate-500" />
           Visit the Repo!

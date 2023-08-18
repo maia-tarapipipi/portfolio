@@ -4,8 +4,33 @@ import { Link } from 'react-router-dom'
 
 function Widgets() {
   return (
-    <div className="px-20 pb-10">
-      <h1 className="text-2xl ">Widgets App</h1>
+    <div>
+      <h1 className="text-2xl text-center">Widgets App</h1>
+      <h1 className="text-center text-lg">Demo</h1>
+      <div className="text-lg flex justify-evenly items-center max-lg:flex-col">
+        <div>
+          <ReactPlayer
+            className="max-md:hidden"
+            url="youtube.com/watch?v=YAcs6A4gOUk"
+          />
+          <iframe
+            title="Pinky Promise Demo"
+            className="md:hidden border-0"
+            width="420"
+            height="315"
+            src="https://www.youtube.com/embed/YAcs6A4gOUk"
+          ></iframe>
+        </div>
+        <div className="text-lg flex justify-center hover:text-slate-500 w-1/4 items-center">
+          <Link
+            to="https://github.com/maia-tarapipipi/widgets-app"
+            target="_blank"
+          >
+            <BsGithub size={80} className=" m-5 hover:fill-slate-500" />
+            Visit the Repo!
+          </Link>
+        </div>
+      </div>
       <div className="flex flex-row">
         <div>
           <p>
@@ -27,21 +52,8 @@ function Widgets() {
             </li>
           </ul>
         </div>
+      </div>
 
-        <div className="text-lg flex justify-center hover:text-slate-500 w-1/4 items-center">
-          <Link
-            to="https://github.com/maia-tarapipipi/widgets-app"
-            target="_blank"
-          >
-            <BsGithub size={80} className="mx-5 hover:fill-slate-500" />
-            Visit the Repo!
-          </Link>
-        </div>
-      </div>
-      <h1 className="text-center text-lg">Demo</h1>
-      <div className="flex justify-center">
-        <ReactPlayer playing url="youtube.com/watch?v=YAcs6A4gOUk" />
-      </div>
       <div className="pl-10">
         <p className="text-lg">Future Plans:</p>
         <ul className="list-disc">

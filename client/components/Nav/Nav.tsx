@@ -21,9 +21,9 @@ function Nav() {
   }, [])
 
   return (
-    <div className="text-2xl">
-      <button className="lg:hidden" onClick={toggleMenu}>
-        {open ? <IoClose /> : <IoMenu />}
+    <div>
+      <button className="lg:hidden place-content-end" onClick={toggleMenu}>
+        {open ? <IoClose size={40} /> : <IoMenu size={40} />}
       </button>
       <div className="bg-white">
         <div
@@ -34,17 +34,20 @@ function Nav() {
           }
         >
           <div>
-            <Link to="/" className="hover:text-slate-500">
+            <Link to="/" className="text-lg hover:text-slate-500">
               home
             </Link>
           </div>
           <div>
-            <button onClick={toggleSubMenu} className="hover:text-slate-500">
+            <button
+              onClick={toggleSubMenu}
+              className="text-lg hover:text-slate-500"
+            >
               projects
             </button>
           </div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center md:text-xs">
           {openSoftware && open && <SoftwareDevelopmentNav />}
         </div>
       </div>
