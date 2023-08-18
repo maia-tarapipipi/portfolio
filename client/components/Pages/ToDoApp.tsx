@@ -4,8 +4,16 @@ import { Link } from 'react-router-dom'
 
 function ToDoApp() {
   return (
-    <div className="px-20 pb-10">
-      <h1 className="text-2xl">To Do App</h1>
+    <div>
+      <h1 className="text-center text-2xl">To Do App</h1>
+
+      <div className="text-lg flex justify-evenly items-center">
+        <ReactPlayer url="https://www.youtube.com/watch?v=7rwU2hMRHOk" />
+        <Link to="https://github.com/maia-tarapipipi/to-do-app" target="_blank">
+          <BsGithub size={80} className="mx-5 hover:fill-slate-500" />
+          Visit the Repo!
+        </Link>
+      </div>
       <div className="flex flex-row">
         <div>
           <p>
@@ -28,27 +36,11 @@ function ToDoApp() {
             </li>
           </ul>
         </div>
-        <div className="text-lg flex justify-center hover:text-slate-500 w-1/4 items-center">
-          <Link
-            to="https://github.com/maia-tarapipipi/to-do-app"
-            target="_blank"
-          >
-            <BsGithub size={80} className="mx-5 hover:fill-slate-500" />
-            Visit the Repo!
-          </Link>
-        </div>
       </div>
 
       <h1 className="text-center text-lg">Demo</h1>
-      <div className="flex justify-center">
-        <ReactPlayer
-          playing
-          url="https://www.youtube.com/watch?v=7rwU2hMRHOk"
-        />
-      </div>
 
       <p>Future Plans:</p>
-
       <ul className="list-disc pl-10">
         <li>
           Personalized Styling: We are working on allowing users to personalize

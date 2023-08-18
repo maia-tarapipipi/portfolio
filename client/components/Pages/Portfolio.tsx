@@ -5,9 +5,9 @@ import { FaFigma } from 'react-icons/fa'
 function Portfolio() {
   return (
     <div>
-      <h1 className="text-2xl text-center">Pinky Promise</h1>
+      <h1 className="text-2xl text-center">This Portfolio!</h1>
 
-      <div className="text-lg flex justify-evenly items-center max-lg:flex-col flex-row">
+      <div className="text-lg flex justify-evenly items-center max-sm:flex-col flex-row">
         <Link to="https://github.com/maia-tarapipipi/portfolio" target="_blank">
           <BsGithub size={80} className="mx-5" />
           Visit the Repo!

@@ -573,6 +573,10 @@ video {
   margin-bottom: 3rem;
 }
 
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
 .ml-20 {
   margin-left: 5rem;
 }
@@ -583,10 +587,6 @@ video {
 
 .mt-3 {
   margin-top: 0.75rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
 }
 
 .block {
@@ -667,12 +667,6 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(2.5rem * var(--tw-space-x-reverse));
   margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-5 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .border-2 {
@@ -810,6 +804,10 @@ video {
 @media not all and (min-width: 640px) {
   .max-sm\:mt-4 {
     margin-top: 1rem;
+  }
+
+  .max-sm\:flex-col {
+    flex-direction: column;
   }
 
   .max-sm\:px-7 {
