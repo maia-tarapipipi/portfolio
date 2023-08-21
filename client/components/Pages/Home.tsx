@@ -1,6 +1,6 @@
 function Home() {
   return (
-    <div className="text-center">
+    <div className="text-center text-base">
       <div className="lg:flex lg:flex-row justify-evenly items-center">
         <div className="max-lg:hidden w-80">
           <img src="/maia-photo.svg" alt="Maia-selfie" />
@@ -29,8 +29,8 @@ function Home() {
       </div>
       <div className="flex flex-row pb-10">
         <div className="flex flex-row max-lg:flex-col">
-          <ul className="text-left list-disc">
-            <p className="text-left text-lg w-80"> Tech Stack:</p>
+          <ul className="text-left text-base list-disc">
+            <p className="text-left text-lg w-80">Tech Stack:</p>
             <li>HTML5</li>
             <li>CSS and Tailwind</li>
             <li>Javascript</li>
@@ -46,36 +46,43 @@ function Home() {
             <li>Handlebars</li>
             <li>Jest</li>
             <li>Vitest</li>
+            <li>Next.js</li>
+            <li>HTMX</li>
           </ul>
-          <ul>
-            <p className="text-lg w-1/2">Core Skills:</p>
+          <ul className="text-base w-full text-center">
+            <li className="text-lg">Core Skills:</li>
             <li className="pb-2">
-              Adaptable and Resourceful: As a production assistant in my
-              previous industry, I honed my skills in problem-solving and
-              adaptability. The creative process often requires thinking outside
-              the box and finding innovative solutions to challenges that arise.
-              I have become adept at navigating various situations, identifying
-              opportunities, and quickly adapting to new circumstances.
+              <span className="text-lg">Adaptable and Resourceful:</span>
+              <br /> As a production assistant in my previous industry, I honed
+              my skills in problem-solving and adaptability. The creative
+              process often requires thinking outside the box and finding
+              innovative solutions to challenges that arise. I have become adept
+              at navigating various situations, identifying opportunities, and
+              quickly adapting to new circumstances.
             </li>
             <li className="pb-2">
-              Continuous Learner: Throughout my career, I have embraced a growth
-              mindset, always eager to learn and expand my knowledge. In my
-              previous role, I thrived on learning new ideas and techniques on
-              the job, and this drive for continuous improvement carried over to
-              the Dev Academy bootcamp. Embracing the learning journey, I
-              discovered a genuine joy in acquiring new skills and knowledge,
-              which fuels my passion for development and fuels my motivation to
-              keep evolving as a professional.
+              <span className="text-lg">Continuous Learner:</span>
+              <br /> Throughout my career, I have embraced a growth mindset,
+              always eager to learn and expand my knowledge. In my previous
+              role, I thrived on learning new ideas and techniques on the job,
+              and this drive for continuous improvement carried over to the Dev
+              Academy bootcamp. Embracing the learning journey, I discovered a
+              genuine joy in acquiring new skills and knowledge, which fuels my
+              passion for development and fuels my motivation to keep evolving
+              as a professional.
             </li>
 
             <li className="pb-2">
-              Empathy and Cultural Understanding: As a Māori woman, I bring a
-              rich and diverse background to my work. This unique perspective
-              has nurtured my sense of empathy, enabling me to better understand
-              and connect with people from various walks of life. Embracing
-              different viewpoints and cultural nuances is an integral part of
-              who I am, and it enhances my ability to build meaningful
-              relationships and collaborate effectively with others.
+              <span className="text-lg">
+                Empathy and Cultural Understanding:
+              </span>
+              <br /> As a Māori woman, I bring a rich and diverse background to
+              my work. This unique perspective has nurtured my sense of empathy,
+              enabling me to better understand and connect with people from
+              various walks of life. Embracing different viewpoints and cultural
+              nuances is an integral part of who I am, and it enhances my
+              ability to build meaningful relationships and collaborate
+              effectively with others.
             </li>
           </ul>
         </div>

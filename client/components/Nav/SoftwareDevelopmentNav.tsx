@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 function SoftwareDevelopmentNav() {
   return (
-    <div className="bg-white max-lg:flex max-lg:flex-col">
+    <div className="bg-white  max-lg:flex max-lg:flex-col">
       <Link className="mx-10 hover:text-slate-500" to="/pinky-promise">
         pinky promise
       </Link>

@@ -28,9 +28,10 @@ function Nav() {
       <div className="bg-white">
         <div
           className={
-            open && width < breakpoint
+            open
               ? 'block'
-              : 'hidden ' + 'w-full lg:flex justify-center space-x-10 lg:w-auto'
+              : 'hidden ' +
+                'w-full lg:flex justify-center space-x-10 lg:w-auto '
           }
         >
           <div>
@@ -47,10 +48,12 @@ function Nav() {
             </button>
           </div>
         </div>
-        <div className="flex justify-center md:text-xs">
-          {openSoftware && <SoftwareDevelopmentNav />}
-        </div>
       </div>
+       {(openSoftware && (open || width > breakpoint)) && (
+          <div className="lg:flex lg:justify-center">
+            <SoftwareDevelopmentNav />
+          </div>
+        )}
     </div>
   )
 }
