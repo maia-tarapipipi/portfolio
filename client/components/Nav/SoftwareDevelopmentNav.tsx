@@ -15,8 +15,8 @@ function SoftwareDevelopmentNav() {
       <Link className="mx-10 hover:text-slate-500" to="/portfolio">
         portfolio
       </Link>
-      <Link className="mx-10 hover:text-slate-500" to="/hackathon">
-        Dev Academy Hackathon
+      <Link className="mx-10 hover:text-slate-500" to="/korero">
+        Kōrero
       </Link>
     </div>
   )

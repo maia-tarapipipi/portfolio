@@ -9,9 +9,7 @@ function PinkyPromise() {
       <h1 className="text-2xl">Pinky Promise</h1>
 
       <h1 className="text-center text-lg">Demo</h1>
-      {/* <Link to="https://youtu.be/Aiy0yg8lJns" className="md:hidden">
-        Visit the video demo!
-      </Link> */}
+
       <div className="text-lg flex justify-center items-center max-lg:flex-col flex-row">
         <div>
           <ReactPlayer
@@ -31,7 +29,7 @@ function PinkyPromise() {
           target="_blank"
           className=" hover:text-slate-500 text-lg m-4"
         >
-          <BsGithub size={80} className="mx-5" />
+          <BsGithub size={80} className="mx-auto" />
           Visit the Repo!
         </Link>
 
@@ -40,7 +38,7 @@ function PinkyPromise() {
           target="_blank"
           className="text-center text-lg hover:text-slate-500"
         >
-          <FaFigma size={80} className="ml-20" />
+          <FaFigma size={80} className="mx-auto"  />
           Visit the wireframe design
         </Link>
       </div>
@@ -71,7 +69,7 @@ function PinkyPromise() {
               personalization and identity within the app. Users can feel more
               connected to the platform by having a unique profile.
             </li>
-            <li>add a friend,</li>
+
             <li>
               Add a Friend: Enabling users to add friends to their network is a
               great way to foster connections and make the app more social. It
@@ -109,6 +107,12 @@ function PinkyPromise() {
           personal. That&apos;s why we are working on a public or hidden
           promises option, allowing you to choose who can see specific
           commitments.
+          <br />
+          We have a deployed site which is now live, if you&apos;d like to visit
+          you&apos;re welcome to contact me and I can give you access! Something
+          that has come from that is that our next step for continuous
+          improvement is trying to optimise the codebase to run more
+          efficiently.
         </p>
       </div>
     </div>
@@ -116,7 +120,3 @@ function PinkyPromise() {
 }
 
 export default PinkyPromise
-
-{
-  /* <iframe width="1120" height="728" src="https://www.youtube.com/embed/Aiy0yg8lJns" title="Pinky Promise Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */
-}

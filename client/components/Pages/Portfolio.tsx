@@ -9,14 +9,14 @@ function Portfolio() {
 
       <div className="text-lg flex justify-evenly items-center max-sm:flex-col flex-row">
         <Link to="https://github.com/maia-tarapipipi/portfolio" target="_blank">
-          <BsGithub size={80} className="mx-5" />
+          <BsGithub size={80} className="mx-auto" />
           Visit the Repo!
         </Link>
         <Link
           to="https://www.figma.com/file/iskxOGw3ShtaVyI8dIQZ68/Maia-Tarapipipi---Portfolio?type=design&node-id=0-1&mode=design&t=oA62W5AMhUJxG4tI-0"
           target="_blank"
         >
-          <FaFigma size={80} className="ml-10" />
+          <FaFigma size={80} className="mx-auto" />
           Visit the wireframe!
         </Link>
       </div>
@@ -39,10 +39,12 @@ function Portfolio() {
           <ul className="list-disc pl-10 text-left">
             <li>React</li>
             <li>Active deployment on Vercel</li>
-            <li>React Slick</li>
-            <li>React Player</li>
-            <li>React Scroll</li>
-            <li>React router dom</li>
+            <li>
+              React Packages: React-Slick, React-player, react-scroll and
+              react-router-dom
+            </li>
+
+            <li>Code Splitting</li>
           </ul>
         </div>
       </div>
@@ -50,7 +52,7 @@ function Portfolio() {
       <div>
         <p className="text-center text-lg">Future Plans:</p>
         <ul className="list-disc pl-10">
-          <li>Import images from hosting site to improve performance</li>
+          <li>Research some ways to improve the software quality</li>
         </ul>
       </div>
     </div>
